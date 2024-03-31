@@ -8,8 +8,12 @@ app.use(morgan('tiny'));
 
 app.use(require("./routes/index.js"));
 
-app.get('/abigail', (req, res) => {
+app.get('/', (req, res) => {
     res.sendStatus(200);
+});
+
+app.get('/abigail', (req, res) => {
+    res.render("te amo abigail")
 });
 
 
